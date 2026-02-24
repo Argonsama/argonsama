@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+#disclaimer(This project is for educational purposes only. All testing was performed in a controlled environment or on authorized targets.)
 <!--
 **Argonsama/argonsama** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
