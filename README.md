@@ -32,3 +32,27 @@ Combines OS detection, service version detection, script scanning, and tracerout
 ➡️ Provides comprehensive information but is more intrusive.
 
 <img width="877" height="403" alt="-A" src="https://github.com/user-attachments/assets/a614b2e2-c4b2-491d-a745-3c7d32572f32" />
+
+• DNSRecon 
+
+1. dns -d google.com
+
+Performs basic DNS enumeration on the domain.
+Retrieves information such as name servers, IP addresses, and basic DNS records.
+<img width="1066" height="783" alt="-d" src="https://github.com/user-attachments/assets/1f1d023f-906a-40c6-84d2-4c2fdb735d3a" />
+
+2. dns -d google.com -t axfr
+
+Attempts a DNS zone transfer (AXFR).
+If successful, it reveals all DNS records for the domain, which can expose internal infrastructure.
+<img width="512" height="786" alt="-d -t" src="https://github.com/user-attachments/assets/78c00b3f-97a5-410c-8f3c-8b9cbf0b6e69" />
+
+3. dns -r
+
+Enables recursive or reverse DNS lookup.
+Used to discover domain names linked to IP address ranges.
+<img width="520" height="92" alt="-r" src="https://github.com/user-attachments/assets/cdcf9919-9531-4638-844e-b372b3588d1b" />
+
+
+
+
