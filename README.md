@@ -1,6 +1,8 @@
 ## Hi there 👋
 #disclaimer(This project is for educational purposes only. All testing was performed in a controlled environment or on authorized targets.)
 
+**Task 1: Reconnaissance Tools**
+
 • Recon-ng
 1. Workspace Management
 The screenshot demonstrates the use of the commands workspaces create, workspaces list, and workspaces load to manage a workspace named "Project CS".
@@ -75,3 +77,36 @@ Used to stress-test firewalls or IDS/IPS systems.
 
 ![--flood](https://github.com/user-attachments/assets/28bb33cd-98bd-494e-9997-fb09551ca4ab)
 
+
+**Task 2: Maintaining access tools**
+• Powersploit
+• Webshells
+• Weevely 
+• Dns2tcp 
+• Cryptcat 
+
+**Tools comparison**
+
+>Comparison of Reconnaissance Tools
+1. Recon-ng focuses on Open Source Intelligence (OSINT) gathering. It collects information from publicly available sources such as websites, search engines, and online databases. This tool is mainly used during the early reconnaissance phase of a cybersecurity assessment to gather preliminary information about a target.
+
+2. Nmap is used for network scanning and service detection. It identifies open ports, running services, and the operating system of a target machine. Nmap is commonly used for network mapping and vulnerability assessment to understand the structure and exposure of a network.
+
+3. hping3 is designed to craft and send custom network packets. It is used to test firewall rules, intrusion detection systems (IDS/IPS), and overall network behavior. This tool is typically applied in advanced network testing and traffic simulation scenarios.
+
+4. DNSRecon specializes in DNS enumeration. It retrieves DNS records and can attempt zone transfers to discover additional domain information. DNSRecon is mainly used to gather domain and subdomain details related to a target.
+
+
+>Comparison of Maintaining access tools
+
+1. PowerSploit is a PowerShell-based framework mainly used for post-exploitation tasks in Windows environments. It helps attackers or penetration testers perform privilege escalation, credential harvesting, and system control after gaining initial access.
+
+2. Webshells are malicious scripts uploaded to a web server to provide remote access through a web browser. They are commonly used to maintain persistence and execute commands on compromised web servers.
+
+3. Weevely is a stealthy PHP web shell tool that allows remote command execution and file management on a compromised server. It provides more structured control compared to basic webshells.
+
+4. Dns2tcp is a tunneling tool that transmits TCP traffic over DNS queries. It is typically used to bypass firewall restrictions by hiding communication within DNS traffic.
+
+5. Cryptcat is a modified version of Netcat that provides encrypted communication between systems. It is often used to create secure backdoors or transfer data stealthily.
+
+**References**
