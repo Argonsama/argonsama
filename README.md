@@ -80,7 +80,8 @@ Used to stress-test firewalls or IDS/IPS systems.
 
 **Task 2: Maintaining access tools**
 • Powersploit
-sasdasdasd
+<img width="861" height="810" alt="1" src="https://github.com/user-attachments/assets/49ab0255-ebd1-41cb-800f-1c09b8306c13" />
+
 • Webshells
 • Weevely 
 • Dns2tcp 
