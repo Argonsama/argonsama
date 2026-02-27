@@ -53,6 +53,25 @@ Enables recursive or reverse DNS lookup.
 Used to discover domain names linked to IP address ranges.
 <img width="520" height="92" alt="-r" src="https://github.com/user-attachments/assets/cdcf9919-9531-4638-844e-b372b3588d1b" />
 
+• Hping3 
 
+1. hping3 -s -p <port> -c <count>
 
+Sends a fixed number of packets to a specific port.
+Used to test basic connectivity and port response.
+<img width="706" height="348" alt="-s -p -c" src="https://github.com/user-attachments/assets/7cbb6234-9f3f-4fd2-bbb8-c3414aa8a919" />
+
+2. hping3 -s -p <port> -c <count> -i <interval>
+
+Sends packets with a controlled time interval between each packet.
+Used to analyze network latency and packet timing behavior.
+
+<img width="760" height="215" alt="-s -p -c -i" src="https://github.com/user-attachments/assets/bfe5482e-a50b-4b3e-ae16-b44e86532ad0" />
+
+3. hping3 -S -p <port> --flood <target>
+
+Sends continuous TCP SYN packets to port at high speed.
+Used to stress-test firewalls or IDS/IPS systems.
+
+![--flood](https://github.com/user-attachments/assets/28bb33cd-98bd-494e-9997-fb09551ca4ab)
 
