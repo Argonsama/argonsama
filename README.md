@@ -80,6 +80,7 @@ Used to stress-test firewalls or IDS/IPS systems.
 
 **Task 2: Maintaining access tools**
 • Powersploit
+sasdasdasd
 • Webshells
 • Weevely 
 • Dns2tcp 
