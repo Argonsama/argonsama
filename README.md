@@ -88,9 +88,9 @@ Used to stress-test firewalls or IDS/IPS systems.
 **Tools comparison**
 
 >Comparison of Reconnaissance Tools
-1. Recon-ng focuses on Open Source Intelligence (OSINT) gathering. It collects information from publicly available sources such as websites, search engines, and online databases. This tool is mainly used during the early reconnaissance phase of a cybersecurity assessment to gather preliminary information about a target.
+1. Recon-ng focuses on Open Source Intelligence (OSINT) gathering. It collects information from publicly available sources such as websites, search engines, and online databases. This tool is mainly used during the early reconnaissance phase of a cybersecurity assessment to gather preliminary information about a target. Recon-ng has a look and feel similar to the Metasploit Framework, reducing the learning curve for leveraging the framework
 
-2. Nmap is used for network scanning and service detection. It identifies open ports, running services, and the operating system of a target machine. Nmap is commonly used for network mapping and vulnerability assessment to understand the structure and exposure of a network.
+2. Nmap is used for network scanning and service detection. It identifies open ports, running services, and the operating system of a target machine. Nmap is commonly used for network mapping and vulnerability assessment to understand the structure and exposure of a network. Topics include subverting firewalls and intrusion detection systems, optimizing Nmap performance, and automating common networking tasks with the Nmap Scripting Engine. Nmap runs on Windows, Linux, and Mac OS X. 
 
 3. hping3 is designed to craft and send custom network packets. It is used to test firewall rules, intrusion detection systems (IDS/IPS), and overall network behavior. This tool is typically applied in advanced network testing and traffic simulation scenarios.
 
@@ -110,3 +110,6 @@ Used to stress-test firewalls or IDS/IPS systems.
 5. Cryptcat is a modified version of Netcat that provides encrypted communication between systems. It is often used to create secure backdoors or transfer data stealthily.
 
 **References**
+[1] Repository & Wiki: * Tomes, T. (2026). Recon-ng: A full-featured Web Reconnaissance framework written in Python. GitHub. https://github.com/lanmaster53/recon-ng 
+[2] Lyon, G. F. (2009). Nmap Network Scanning: The Official Nmap Project Guide to Network Discovery and Security Scanning. Insecure. https://nmap.org/book/
+[3] FireCompass. (2024). Top 10 Tools for Reconnaissance. https://www.firecompass.com/wp-content/uploads/2024/02/FireCompass-Top-10-Tools-for-Reconnaissance.pdf
