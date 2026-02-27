@@ -79,13 +79,43 @@ Used to stress-test firewalls or IDS/IPS systems.
 
 
 **Task 2: Maintaining access tools**
-• Powersploit
-<img width="861" height="810" alt="1" src="https://github.com/user-attachments/assets/49ab0255-ebd1-41cb-800f-1c09b8306c13" />
+• Metasploit
+<img width="868" height="149" alt="meta 1" src="https://github.com/user-attachments/assets/ebe0bf82-85fb-43d3-bf25-df28e5e6bf60" />
+<img width="1014" height="733" alt="meta 2" src="https://github.com/user-attachments/assets/b52b0ddd-19ca-4a01-9ad7-c90bd5abf30c" />
+<img width="1049" height="552" alt="meta 3" src="https://github.com/user-attachments/assets/7e370516-c20c-4ab0-9bd3-8219cc27fb0d" />
+<img width="997" height="540" alt="meta 4" src="https://github.com/user-attachments/assets/295c7d3e-0d06-4114-8870-84421b3cd9af" />
 
-• Webshells
+Persistence: I established a persistent connection to ensure the session remains active and automatically restarts even if the target system reboots.
+Keyscan: I initiated a keystroke sniffer to monitor and record all keyboard input from the target user in real-time.
+Hashdump: I performed a hash dump to extract the encrypted password files for all local user accounts stored on the system.
+
+• PowerShell Empire
+<img width="790" height="877" alt="empire 1" src="https://github.com/user-attachments/assets/5990f866-9f43-4d24-a38c-b78a55645ec4" />
+<img width="1134" height="855" alt="empire 2" src="https://github.com/user-attachments/assets/ab151ff1-e832-4d95-8a07-d30e75eaa3ba" />
+<img width="557" height="200" alt="empire 3" src="https://github.com/user-attachments/assets/fff02246-6b8f-4aba-b896-3fc35f9b289b" />
+<img width="1008" height="595" alt="empire 4" src="https://github.com/user-attachments/assets/879dfa3d-5611-455e-bf1b-f2764ebed03e" />
+<img width="1103" height="309" alt="empire 5" src="https://github.com/user-attachments/assets/4ecc7430-ed6a-4624-bbe7-1012a6e8029b" />
+<img width="882" height="200" alt="empire 6" src="https://github.com/user-attachments/assets/1ed45b88-4ead-4dfd-90a0-9f4d6f468b9e" />
+
+Listener: I configured and started an HTTP listener to act as the central control point for receiving incoming connections from compromised systems.
+Stager: I generated a PowerShell stager (launcher) to execute on the target machine, which initiates the initial connection back to my listener.
+Situational Awareness: I executed a situational awareness module (PowerView) to automatically gather information about the local groups and user permissions on the target system.
+
 • Weevely 
-• Dns2tcp 
-• Cryptcat 
+<img width="945" height="795" alt="Weevely" src="https://github.com/user-attachments/assets/d9d5b58b-ca0b-4f15-bee6-47036ec7c5df" />
+
+weevely generate – This command creates a PHP web shell file (agent.php) with a password so you can remotely control the target server.
+weevely <url> <password> – This connects to the uploaded web shell on the target server using the correct URL and password to start a remote session.
+:system_info – This module gathers and displays important information about the target system, such as the current user, operating system, PHP version, and server paths.
+
+• Netcat 
+<img width="566" height="303" alt="netcat 1" src="https://github.com/user-attachments/assets/c89c905a-63e3-4ead-ae54-7c64ba47ee09" />
+<img width="794" height="543" alt="netcat 2" src="https://github.com/user-attachments/assets/1bca81d3-be5a-4da0-807a-2284f6d6b2ea" />
+<img width="714" height="448" alt="netcat 3" src="https://github.com/user-attachments/assets/dbcfb1b1-ed71-4f3d-832c-b08ba061927c" />
+
+Reverse Shell: I used Netcat to create a reverse shell connection that allows me to execute command-line instructions on the target Windows machine from my Kali Linux terminal.
+Data Exfiltration: I performed data exfiltration by using a redirection command to send the contents of a local file from the target machine to my listening server.
+File Transfer Listener: I configured a Netcat listener on my attack machine to receive and save incoming data streams into a specific text file.
 
 **Tools comparison**
 
@@ -107,9 +137,7 @@ Used to stress-test firewalls or IDS/IPS systems.
 
 3. Weevely is a stealthy PHP web shell tool that allows remote command execution and file management on a compromised server. It provides more structured control compared to basic webshells.
 
-4. Dns2tcp is a tunneling tool that transmits TCP traffic over DNS queries. It is typically used to bypass firewall restrictions by hiding communication within DNS traffic.
-
-5. Cryptcat is a modified version of Netcat that provides encrypted communication between systems. It is often used to create secure backdoors or transfer data stealthily.
+4. Cryptcat is a modified version of Netcat that provides encrypted communication between systems. It is often used to create secure backdoors or transfer data stealthily.
 
 **References**
 [1] Repository & Wiki: * Tomes, T. (2026). Recon-ng: A full-featured Web Reconnaissance framework written in Python. GitHub. https://github.com/lanmaster53/recon-ng 
